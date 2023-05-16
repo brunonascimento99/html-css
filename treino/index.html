@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        div>p {
+            display: none;
+        }
+
+        div:hover p {
+            color: rgb(35, 22, 231);
+            display: block;
+            text-decoration: underline;
+        }
+
+        img {
+            display: none;
+        }
+
+        .sub_img:hover img {
+            display: block;
+        }
+
+        .sub_img {
+            margin: 1.5em;
+        }
+
+        .animation_border {
+            display: inline-block;
+        }
+
+        .animation_border::after {
+            border-bottom: solid blue;
+            display: block;
+            content: '';
+            transform: scaleX(0);
+            transition: transform 250ms ease-in-out;
+        }
+
+        .animation_border:hover:after {
+            transform: scaleX(1);
+        }
+
+        .animation_border:after {
+            transform-origin: 0% 05%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Texto escondido</h1>
+    <p>passe o mouse abaixo</p>
+    <div>Passa aqui
+        <p><a href="">Link escondido</a></p>
+    </div><br>
+    <div class="sub_img">passe o mouse aqui para ver imagem
+        <img src="pexels-pixabay-541484.jpg" alt="foto de uma flor">
+    </div>
+    <div class="animation_border">animação com borda</div>
+</body>
+
+</html>

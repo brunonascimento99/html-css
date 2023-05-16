@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(123, 185, 81, 0.671);
+    /* font: normal 16px, Arial, sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(22, 31, 23);
+}
+h2 {
+    color: rgb(52, 100, 60);
+}
+#title_one {
+    color: rgba(255, 255, 255, 0.849);
+    text-align: center;
+    background-color: green;
+}
+.basic{
+    color:rgb(52, 100, 60);
+}
+.intermedy{
+    color: rgb(235, 235, 93);
+}
+.advanced{
+    color: rgb(199, 47, 47);
+}
